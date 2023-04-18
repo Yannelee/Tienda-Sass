@@ -133,5 +133,16 @@ body {
     opacity: 1;
   }
 }
+.footer__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #DEA350;
+}
+.footer__items .footer__rrss * {
+  color: #694CF5;
+  margin-left: 0.5rem;
+}
 
 /*# sourceMappingURL=styles.css.map */

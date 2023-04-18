@@ -3,6 +3,7 @@
 @import 'base/tipografia';
 
 @import 'layout/nav';
+@import 'layout/footer';
 
 @import 'components/display';
 @import 'components/botones.scss';
@@ -64,4 +65,14 @@ body{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.footer{
+  &__items{
+    @include footer;
+    .footer__rrss *{
+      color: $boton-color;
+      margin-left: 0.5rem;
+    }
+  }
 }
