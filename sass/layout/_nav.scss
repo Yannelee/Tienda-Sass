@@ -1,0 +1,21 @@
+.nav{
+  background-color: $background-secondary;
+  padding: 0.7rem 0.5rem;
+  
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  a{
+    text-decoration: none;
+    margin: 0 1rem;
+    color: black;
+    font-size: $m;
+  }
+  a:hover{
+    border-radius: 0.5rem;
+    background-color: $link-hover;
+    color: white;
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,22 @@
+@mixin boton {
+  background-color: $boton-color;
+  border-radius: 0.4rem;
+  text-align: center;
+  padding: 0.3rem 0;
+  color: white;
+  
+  &:hover{
+    cursor: pointer;
+    background-color: $boton-secondary;
+  }
+}
+
+@mixin flecha {
+  position: absolute;
+  bottom: 50%;
+  color: $boton-color;
+  &:hover{
+    color: $boton-secondary;
+    text-shadow: 2px 2px 5px black;
+  }
+}

@@ -1,0 +1,67 @@
+@import 'base/base';
+@import 'base/resets';
+@import 'base/tipografia';
+
+@import 'layout/nav';
+
+@import 'components/display';
+@import 'components/botones.scss';
+@import 'components/card.scss';
+
+body{
+  font-family: $verdana;
+}
+
+.novedades{
+  text-align: center;
+  color: $title;
+  &__carusel{
+    position: relative;
+    .novedades__flecha{
+      .flecha__link--left{
+        @include flecha;
+        left: 1rem;
+      }
+      .flecha__link--right{
+        @include flecha;
+        right: 1rem;
+      }
+    }
+  }
+  &__slide{
+    @include display(nowrap, 0 2rem)
+  }
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  &__producto{
+    @include card;
+    .producto__precio{
+      @include boton;
+    }
+  }
+}
+
+.ofertas{
+  text-align: center;
+  color: $title;
+  &__items{
+    @include display(wrap, 0.5rem)
+  }
+  &__producto{
+    @include card;
+    width: 15%;
+    margin: 0.5rem 0.2rem;
+    .oferta__precio{
+      @include boton;
+    }
+  }
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

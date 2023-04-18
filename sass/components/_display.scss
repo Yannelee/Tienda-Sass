@@ -1,0 +1,6 @@
+@mixin display($wrap, $padding) {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: $wrap;
+  padding: $padding;
+}

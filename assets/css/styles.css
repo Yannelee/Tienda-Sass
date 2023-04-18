@@ -1,0 +1,137 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #F5C764;
+}
+
+.nav {
+  background-color: #DEA350;
+  padding: 0.7rem 0.5rem;
+}
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+}
+.nav a {
+  text-decoration: none;
+  margin: 0 1rem;
+  color: black;
+  font-size: 14px;
+}
+.nav a:hover {
+  border-radius: 0.5rem;
+  background-color: #694CF5;
+  color: white;
+  padding: 0.5rem;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.novedades {
+  text-align: center;
+  color: #4F3DA8;
+}
+.novedades__carusel {
+  position: relative;
+}
+.novedades__carusel .novedades__flecha .flecha__link--left {
+  position: absolute;
+  bottom: 50%;
+  color: #694CF5;
+  left: 1rem;
+}
+.novedades__carusel .novedades__flecha .flecha__link--left:hover {
+  color: #4F3DA8;
+  text-shadow: 2px 2px 5px black;
+}
+.novedades__carusel .novedades__flecha .flecha__link--right {
+  position: absolute;
+  bottom: 50%;
+  color: #694CF5;
+  right: 1rem;
+}
+.novedades__carusel .novedades__flecha .flecha__link--right:hover {
+  color: #4F3DA8;
+  text-shadow: 2px 2px 5px black;
+}
+.novedades__slide {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  padding: 0 2rem;
+}
+.novedades__items {
+  display: flex;
+  justify-content: space-around;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.novedades__producto {
+  background-color: rgba(222, 163, 80, 0.7529411765);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+.novedades__producto img {
+  max-width: 100%;
+}
+.novedades__producto .producto__precio {
+  background-color: #694CF5;
+  border-radius: 0.4rem;
+  text-align: center;
+  padding: 0.3rem 0;
+  color: white;
+}
+.novedades__producto .producto__precio:hover {
+  cursor: pointer;
+  background-color: #4F3DA8;
+}
+
+.ofertas {
+  text-align: center;
+  color: #4F3DA8;
+}
+.ofertas__items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+}
+.ofertas__producto {
+  background-color: rgba(222, 163, 80, 0.7529411765);
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  width: 15%;
+  margin: 0.5rem 0.2rem;
+}
+.ofertas__producto img {
+  max-width: 100%;
+}
+.ofertas__producto .oferta__precio {
+  background-color: #694CF5;
+  border-radius: 0.4rem;
+  text-align: center;
+  padding: 0.3rem 0;
+  color: white;
+}
+.ofertas__producto .oferta__precio:hover {
+  cursor: pointer;
+  background-color: #4F3DA8;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

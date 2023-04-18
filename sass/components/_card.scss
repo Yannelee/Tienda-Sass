@@ -1,0 +1,10 @@
+@mixin card{
+  background-color: $background-colorTrans;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  img{
+    max-width: 100%;
+  }
+}
